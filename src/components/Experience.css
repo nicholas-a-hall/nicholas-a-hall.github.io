@@ -1,0 +1,50 @@
+.exp__timeline {
+  position: relative;
+  padding-left: 28px;
+  margin: 0;
+  list-style: none; /* the timeline dots are the markers, no ordered numbers */
+}
+.exp__timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px; top: 6px; bottom: 6px;
+  width: 2px;
+  background: linear-gradient(var(--border), transparent);
+}
+.exp__item { position: relative; padding-bottom: 40px; }
+.exp__item:last-child { padding-bottom: 0; }
+.exp__marker {
+  position: absolute;
+  left: -28px; top: 6px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.exp__top {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 8px;
+  margin-bottom: 12px;
+}
+.exp__role { font-size: 1.2rem; }
+.exp__at { color: var(--text-faint); }
+.exp__company { color: var(--accent-strong); }
+.exp__period {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-faint);
+}
+.exp__highlights { display: grid; gap: 8px; }
+.exp__highlights li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-dim);
+}
+.exp__highlights li::before {
+  content: '';
+  position: absolute; left: 2px; top: 11px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}

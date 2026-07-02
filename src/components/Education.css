@@ -1,0 +1,21 @@
+.edu__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.edu__card {
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.edu__card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.edu__period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+.edu__school { font-size: 1.15rem; margin-bottom: 6px; }
+.edu__detail { color: var(--text-dim); font-size: 0.95rem; }
