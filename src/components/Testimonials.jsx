@@ -15,7 +15,7 @@ export default function Testimonials({ testimonials }) {
       id="recommendations"
       kicker="06 / Recommendations"
       title="What people say"
-      intro="Managers, peers, and direct reports spanning the Army, broadcast, higher-ed, and startups. A few of their words."
+      intro="I'm a terrible self-salesman, so I'll let other people do the talking: managers, peers, and direct reports, from the Army to startups."
     >
       <div className="tst__grid">
         {testimonials.map((t) => (

@@ -9,7 +9,7 @@ export const profile = {
   name: 'Nick',
   fullName: 'Nicholas Hall',
   // Name + level eyebrow above the hero headline. Recruiters need both fast.
-  title: 'Nicholas Hall · Staff Platform / Site Reliability Engineer',
+  title: 'Nicholas Hall · Staff/Principal Platform & Site Reliability Engineer',
   // The spine: one line that says what you do and works for streaming-scale
   // reliability AND startup range.
   tagline: 'I make infrastructure boring, on purpose.',
@@ -20,7 +20,7 @@ export const profile = {
   pitch:
     "I like strange problems, useful systems, and the places where software has to touch the real world. If you have a headache technology could help with, I'm your guy.",
   location: 'Litchfield, Illinois',
-  availability: 'Open to Staff IC & startup lead roles',
+  availability: 'Open to Staff/Principal IC & startup lead roles',
   email: 'nick@section33.io',
   phone: '(618) 595-0262',
   phoneUrl: 'tel:+16185950262',
@@ -31,9 +31,9 @@ export const profile = {
 // best numbers in the first screen instead of digging for them.
 export const metrics = [
   { value: '20B', label: 'log entries / week at streaming scale' },
-  { value: '$4M', label: 'annual cloud spend cut' },
-  { value: '83%', label: 'faster deploy & recovery' },
-  { value: '4 hrs', label: 'SOC 2 Type 2 audit (vs 3-day window)' },
+  { value: '$4M', label: 'annual cloud spend cut, zero observability lost' },
+  { value: '$20M', label: 'ARR SaaS platform, led from zero to GA' },
+  { value: '4 hrs', label: 'SOC 2 Type 2 audit, passed first time (3-day window)' },
 ]
 
 // Social / contact links. Remove any you don't want; the icons map by `type`.
@@ -49,11 +49,11 @@ export const socials = [
 export const about = {
   heading: "Who I am & what I'm about",
   paragraphs: [
-    "I take infrastructure from chaos to calm. Give me a system that's fragile, expensive, or on fire, and I'll make it boring, the highest compliment a platform can earn.",
-    "My background is weird, and that's the point. I've kept intelligence systems running in a combat zone, kept a TV station on air, run streaming observability at 20 billion log entries a week, and rebuilt a bowling alley from dirt. Different domains, same pattern: hard problem, high pressure, I sort it out. I go where the hard problems are, which is why my last few years have been early-stage and Bay Area startups, not a single logo for a decade.",
-    "The work itself is platform engineering, SRE, and DevOps at scale: Kubernetes and GitOps across AWS, Azure, and GCP; observability and incident response you can trust at 2am; CI/CD, MLOps, and the automation that turns repeated toil into infrastructure. Python is my daily driver; Go and I are on speaking terms. But the stack is a detail. The judgment about what to build, when, and how much, is the job.",
-    "I started closer to the metal (electronics, RF, satellite comms, on-prem), the physical problems software people forget exist. I pick up new tech fast, form a working opinion faster, and I write things down so the next engineer doesn't start from zero. I don't care whose box on the org chart owns the problem; if it's blocking the business or hurting the team, it's worth fixing.",
-    "So that's me: part platform engineer, part SRE, part hardware nerd, part small-town business owner. Also restoring a bowling alley, because uptime matters everywhere.",
+    "I take infrastructure from chaos to calm. Give me a system that's fragile, expensive, or on fire, and I'll make it boring. That's the nicest thing you can say about a platform.",
+    "My background is weird, and I think that's the point. I've kept intelligence systems running in a combat zone, kept a TV station on air, run streaming observability at 20 billion log entries a week, and rebuilt a bowling alley from dirt. Different domains, same pattern: hard problem, high pressure, I sort it out. The short stints aren't job hopping. That's the shape of the work. I go in, build the platform, make it boring, and hand it off documented. Then I go find the next fire.",
+    "The day-to-day is platform engineering, SRE, and DevOps: Kubernetes and GitOps across AWS, Azure, and GCP, observability you can trust at 2am, CI/CD, MLOps, and the automation that turns repeated toil into infrastructure. Python is my daily driver. Go and I are on speaking terms. Honestly though, the stack is a detail. Knowing what to build, when, and how much? That's the job.",
+    "I started closer to the metal (electronics, RF, satellite comms, on-prem), the weird physical problems software people forget exist. I pick up new tech fast, form a working opinion faster, and I write it all down: design docs, runbooks, paved roads. Anyone senior can solve the problem in front of them. The point is leaving behind a system, and a team, that can solve the next ten without you. Teams I left years ago still ship on my deployment patterns.",
+    "I'm happiest when work feels like building something useful over pizza with good friends: people who care about each other, care about the craft, and can still ship with the best of them. So that's me. Part platform engineer, part SRE, part hardware nerd, part small-town business owner. Also restoring a bowling alley. Uptime matters everywhere.",
   ],
   // Quick "facts about me" chips. Keep them human.
   facts: [
@@ -171,7 +171,7 @@ export const projects = [
     title: 'SOC 2 Certification',
     org: 'Engineering lead · Growth Protocol',
     blurb:
-      'Led the engineering side of SOC 2 at an early-stage startup: Type 1 in under three months, Type 2 in six. The first-time Type 1 audit was blocked for three days; auditors finished in an afternoon. Implemented technical controls across the full surface (access, change management, active security monitoring) in Vanta, with hands-on remediation across cloud infra. One example: standing up cloud intrusion-detection alerting end-to-end for continuous-monitoring, wired into the pipeline rather than checked off on paper. SOC 2 is the gate that blocks enterprise sales; hitting both fast and clean on a first audit is the differentiator.',
+      'Led the engineering side of SOC 2 at an early-stage startup: Type 1 in under three months, Type 2 in six. The first-time Type 1 audit was blocked for three days; auditors finished in an afternoon. Implemented technical controls across the full surface (access, change management, active security monitoring) in Vanta, with hands-on remediation across cloud infra. One example: standing up cloud intrusion-detection alerting end-to-end for continuous-monitoring, wired into the pipeline rather than checked off on paper. SOC 2 is the gate that blocks enterprise sales, and at a small company it usually eats months. Hitting both fast and clean on a first audit is the differentiator.',
     tags: ['SOC 2', 'Vanta', 'Security', 'Compliance', 'Cloud IDS'],
     links: [],
   },
@@ -200,6 +200,7 @@ export const experience = [
     company: 'Growth Protocol',
     period: 'May 2025 – Apr 2026',
     highlights: [
+      'Effectively the whole platform org: infra, delivery, compliance, and cloud cost for the entire engineering team at an early-stage AI startup.',
       'Owned SOC 2 Type 2 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
       'Moved deployments to GitOps (ArgoCD + Helm), cutting CI/CD build times from 60 minutes to 6.',
       'Ran multi-cloud Kubernetes (GKE / AKS / EKS), consolidating 30+ Cloud Run microservices onto one deployable platform.',
@@ -216,10 +217,11 @@ export const experience = [
     ],
   },
   {
-    role: 'Senior DevOps Engineer',
+    role: 'DevOps Technical Lead',
     company: 'Formant',
     period: 'Mar 2024 – Apr 2025',
     highlights: [
+      'Assembled and led the DevOps team that cleared years of standing technical debt and turned fragile build pipelines into ones engineers stopped thinking about.',
       'Built the telemetry-to-training pipeline for industrial robot fleets, feeding predictive-maintenance and fleet-health models.',
       'Migrated platform services off EC2 / Docker Compose onto Kubernetes with Helm for repeatable releases and rollbacks.',
     ],
@@ -351,6 +353,7 @@ export const testimonials = [
 export const principles = [
   { title: 'Systems that heal themselves', body: "Give me a platform with unpredictable load and I'll build it to figure out its own horsepower, no one babysitting it at 2am." },
   { title: 'Kill the friction between teams', body: "If developers and infra are fighting over a deployment, I'll walk over, ask questions, and fix it. That's just how I'm wired." },
-  { title: 'Learn ridiculously fast', body: "Kubernetes to embedded microcontrollers, satcom to MLOps: if it's useful, I'll figure it out in days. The domain changes; the pattern doesn't." },
-  { title: 'Make AI survive production', body: "The hard part of AI isn't the model, it's keeping it deployable, observable, and reliable after launch. I build the MLOps and the agents: a voice receptionist taking live calls, a bot that holds context through an incident." },
+  { title: 'Learn ridiculously fast', body: "Kubernetes to embedded microcontrollers, satcom to MLOps: if it's useful, I'll figure it out in days. The domain changes. The pattern doesn't." },
+  { title: 'Make AI survive production', body: "The model is the easy part. The hard part is keeping AI deployable, observable, and reliable after launch. I build the MLOps and the agents themselves: a voice receptionist taking live calls, a bot that holds context through an incident." },
+  { title: 'Leave teams stronger than I found them', body: "Trained 12 in the Army. Built the automation program at KSDK. Assembled Formant's DevOps team. Mentored seniors and juniors at FORT. The recommendations below say it in other people's words." },
 ]
