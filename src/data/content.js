@@ -169,7 +169,7 @@ export const projects = [
   },
   {
     title: 'SOC 2 Certification',
-    org: 'Engineering lead · Growth Protocol',
+    org: 'Growth Protocol',
     blurb:
       'Led the engineering side of SOC 2 at an early-stage startup: Type 1 in under three months, Type 2 in six. The first-time Type 1 audit was blocked for three days; auditors finished in an afternoon. Implemented technical controls across the full surface (access, change management, active security monitoring) in Vanta, with hands-on remediation across cloud infra. One example: standing up cloud intrusion-detection alerting end-to-end for continuous-monitoring, wired into the pipeline rather than checked off on paper. SOC 2 is the gate that blocks enterprise sales, and at a small company it usually eats months. Hitting both fast and clean on a first audit is the differentiator.',
     tags: ['SOC 2', 'Vanta', 'Security', 'Compliance', 'Cloud IDS'],
@@ -200,7 +200,6 @@ export const experience = [
     company: 'Growth Protocol',
     period: 'May 2025 – Apr 2026',
     highlights: [
-      'Effectively the whole platform org: infra, delivery, compliance, and cloud cost for the entire engineering team at an early-stage AI startup.',
       'Owned SOC 2 Type 2 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
       'Moved deployments to GitOps (ArgoCD + Helm), cutting CI/CD build times from 60 minutes to 6.',
       'Ran multi-cloud Kubernetes (GKE / AKS / EKS), consolidating 30+ Cloud Run microservices onto one deployable platform.',
