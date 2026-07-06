@@ -197,7 +197,7 @@ export const projects = [
 export const experience = [
   {
     role: 'Senior DevOps Engineer',
-    company: 'Growth Protocol',
+    company: 'Growth Protocol ',
     period: 'May 2025 – Apr 2026',
     highlights: [
       'Owned SOC 2 Type 2 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
