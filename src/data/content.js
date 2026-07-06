@@ -193,6 +193,15 @@ export const projects = [
   },
 ]
 
+// Talks and other video appearances.
+export const talks = [
+  {
+    title: 'Adventures in (the Agentic AI) Space!',
+    videoId: 'gMP5HoiDg3s',
+    url: 'https://youtu.be/gMP5HoiDg3s',
+  },
+]
+
 // Work history / experience. `highlights` are bullet points of impact.
 export const experience = [
   {
@@ -222,7 +231,7 @@ export const experience = [
     period: 'Mar 2024 – Apr 2025',
     highlights: [
       'Assembled and led the DevOps team that cleared years of standing technical debt and turned fragile build pipelines into ones engineers stopped thinking about.',
-      'Built the telemetry-to-training pipeline for industrial robot fleets: optimized and helped structure roughly 750TB of unstructured S3 telemetry, preserving it for predictive-maintenance and fleet-health model training.',
+      'Optimized, helped structure, and preserved roughly 750TB of unstructured robotics telemetry in S3 for model training.',
       'Migrated platform services off EC2 / Docker Compose onto Kubernetes with Helm for repeatable releases and rollbacks.',
     ],
   },

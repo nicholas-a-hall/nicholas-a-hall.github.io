@@ -5,6 +5,7 @@ import ImpactBand from './components/ImpactBand'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Talks from './components/Talks'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import Testimonials from './components/Testimonials'
@@ -17,6 +18,7 @@ import {
   metrics,
   skillGroups,
   projects,
+  talks,
   experience,
   education,
   testimonials,
@@ -47,6 +49,7 @@ export default function App() {
         <About about={about} principles={principles} />
         <Skills groups={skillGroups} />
         <Projects projects={projects} />
+        <Talks talks={talks} />
         <Experience experience={experience} />
         <Education education={education} />
         <Testimonials testimonials={testimonials} />

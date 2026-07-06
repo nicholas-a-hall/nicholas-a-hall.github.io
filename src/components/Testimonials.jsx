@@ -13,7 +13,7 @@ export default function Testimonials({ testimonials }) {
   return (
     <Section
       id="recommendations"
-      kicker="06 / Recommendations"
+      kicker="07 / Recommendations"
       title="What people say"
       intro="I'm a terrible self-salesman, so I'll let other people do the talking: managers, peers, and direct reports, from the Army to startups."
     >

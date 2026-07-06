@@ -3,7 +3,7 @@ import './Education.css'
 
 export default function Education({ education }) {
   return (
-    <Section id="education" kicker="05 / Education" title="Education & training" tight>
+    <Section id="education" kicker="06 / Education" title="Education & training" tight>
       <div className="edu__grid">
         {education.map((e) => (
           <div key={e.school} className="edu__card reveal">

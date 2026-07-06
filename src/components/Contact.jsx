@@ -8,7 +8,7 @@ export default function Contact({ profile, socials }) {
       <div className="contact reveal">
         <div className="contact__glow" aria-hidden="true" />
         <div className="contact__inner">
-          <div className="section-kicker">07 / Contact</div>
+          <div className="section-kicker">08 / Contact</div>
           <h2 className="contact__title">What can I do for you?</h2>
           <p className="contact__text">
             {profile.pitch}
