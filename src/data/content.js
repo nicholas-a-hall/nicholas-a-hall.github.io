@@ -197,12 +197,13 @@ export const projects = [
 export const experience = [
   {
     role: 'Senior DevOps Engineer',
-    company: 'Growth Protocol ',
+    company: 'Growth Protocol',
     period: 'May 2025 – Apr 2026',
     highlights: [
       'Owned SOC 2 Type 2 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
       'Moved deployments to GitOps (ArgoCD + Helm), cutting CI/CD build times from 60 minutes to 6.',
       'Ran multi-cloud Kubernetes (GKE / AKS / EKS), consolidating 30+ Cloud Run microservices onto one deployable platform.',
+      'Partnered with the Data and ML teams to rework their data storage strategy, speeding up model training and improving training data accuracy.',
     ],
   },
   {
