@@ -222,7 +222,7 @@ export const experience = [
     period: 'Mar 2024 – Apr 2025',
     highlights: [
       'Assembled and led the DevOps team that cleared years of standing technical debt and turned fragile build pipelines into ones engineers stopped thinking about.',
-      'Built the telemetry-to-training pipeline for industrial robot fleets, feeding predictive-maintenance and fleet-health models.',
+      'Built the telemetry-to-training pipeline for industrial robot fleets: optimized and helped structure roughly 750TB of unstructured S3 telemetry, preserving it for predictive-maintenance and fleet-health model training.',
       'Migrated platform services off EC2 / Docker Compose onto Kubernetes with Helm for repeatable releases and rollbacks.',
     ],
   },
