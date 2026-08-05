@@ -125,7 +125,7 @@ export const projects = [
     blurb:
       "The open hardware and software stack that runs the floor at Lunar Lanes. ESP32/ESP8266 devices publish over MQTT (Mosquitto) to a bridge that translates to Socket.IO; an Express backend holds canonical lane state in Redis and broadcasts real-time updates over WebSocket to a manager dashboard and four per-lane kiosk displays covering eight lanes, with two-way Google Calendar sync for reservations. The whole thing runs on Docker Compose and Helm, so the same stack comes up on a laptop or on the alley's own hardware.",
     tags: ['ESP32', 'MQTT', 'Socket.IO', 'Redis', 'React', 'Helm', 'Real-time', 'IoT'],
-    links: [{ type: 'link', label: 'lunarlanesbowl.com', url: 'https://nicholas-a-hall.github.io/openlanelink' }],
+    links: [{ type: 'link', label: 'Technical Docs', url: 'https://nicholas-a-hall.github.io/openlanelink' }],
   },
   {
     title: 'MLOps Platform Engineering',
