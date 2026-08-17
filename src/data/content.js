@@ -12,13 +12,13 @@ export const profile = {
   title: 'Nicholas Hall · Staff/Principal Platform & Site Reliability Engineer',
   // The spine: one line that says what you do and works for streaming-scale
   // reliability AND startup range.
-  tagline: 'I make infrastructure boring, on purpose.',
+  tagline: 'High pressure, hard problems. Sorted out fast.',
   // The range story, in your own voice.
   blurb:
-    '21 years turning chaos into calm: intelligence systems in a combat zone, a TV station on air, streaming observability at 20 billion logs a week, and a bowling alley I rebuilt from dirt. Same pattern every time: hard problem, high pressure, I sort it out.',
+    '21 years turning chaos into calm: combat-zone satellite networking, hands-on exploit labs delivered over VDI, a TV station that couldn’t go dark, observability at streaming scale, robotic safety systems that must not fail, a bowling alley rebuilt from dirt, and DevOps for an enterprise reasoning platform. High pressure, hard problems. Sorted out fast.',
   // Closing line for the contact section (straight from your LinkedIn).
   pitch:
-    "I like strange problems, useful systems, and the places where software has to touch the real world. If you have a headache technology could help with, I'm your guy.",
+    "I like strange problems, useful systems, and the places where tech solves real world problems. If you have a headache technology could help with, I'm your guy.",
   location: 'Litchfield, Illinois',
   availability: 'Open to Staff/Principal IC & startup lead roles',
   email: 'nick@section33.io',
@@ -180,7 +180,7 @@ export const projects = [
     org: 'Personal project · offline-first web app',
     blurb:
       'A job-search tracker that treats the hunt like a sales pipeline: applications are leads, sources and categories are segments, statuses are stages, and a live dashboard shows where effort actually converts. Every KPI and chart (conversion by source, pipeline funnel, response rate, salary ranges, in-demand skills) is derived live from the records, with applications going cold flagged automatically. No backend and no accounts: data lives entirely in the browser via localStorage, with JSON import/export and a one-tap PNG summary card. It ships as a single self-contained HTML file that runs fully offline.',
-    tags: ['React', 'Recharts', 'Data viz', 'localStorage', 'Offline-first', 'Product design'],
+    tags: ['React', 'Recharts', 'Data viz', 'localStorage', 'Offline-first'],
     links: [{ type: 'demo', label: 'Live demo', url: 'https://nicholas-a-hall.github.io/quarry/' }],
   },
   {
@@ -208,7 +208,7 @@ export const talks = [
   {
     title: 'Sometimes I make games as a hobby',
     videoId: 'mHOfYplBzd8',
-    url: '  https://youtu.be/mHOfYplBzd8',
+    url: 'https://youtu.be/mHOfYplBzd8',
   },
 ]
 
@@ -219,7 +219,7 @@ export const experience = [
     company: 'Growth Protocol',
     period: 'May 2025 – Apr 2026',
     highlights: [
-      'Owned SOC 2 Type 2 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
+      'Owned SOC 2 Type 1 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
       'Moved deployments to GitOps (ArgoCD + Helm), cutting CI/CD build times from 60 minutes to 6.',
       'Ran multi-cloud Kubernetes (GKE / AKS / EKS), consolidating 30+ Cloud Run microservices onto one deployable platform.',
       'Partnered with the Data and ML teams to rework their data storage strategy, speeding up model training and improving training data accuracy.',
@@ -228,7 +228,7 @@ export const experience = [
   {
     role: 'Owner & Lead Engineer',
     company: 'Lunar Lanes',
-    period: 'Dec 2024 – Present',
+    period: 'Dec 2025 – Present',
     highlights: [
       'Took a bowling alley from unimproved land to operational in 90 days, owning architecture, reliability, cost, and P&L.',
       'Built an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32, ESPNow, RS485, MQTT).',
