@@ -33,7 +33,6 @@ export const metrics = [
   { value: '20B', label: 'log entries / week at streaming scale' },
   { value: '$4M', label: 'annual cloud spend cut, zero observability lost' },
   { value: '$20M', label: 'ARR SaaS platform, led from zero to GA' },
-  { value: '4 hrs', label: 'SOC 2 Type 1 audit, passed first time (3-day window)' },
   { value: '9x', label: 'Increased developer velocity with reduced CICD pipeline time - 60m to 6.' },
 ]
 
