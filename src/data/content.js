@@ -12,7 +12,7 @@ export const profile = {
   title: 'Nicholas Hall · Staff/Principal Platform & Site Reliability Engineer',
   // The spine: one line that says what you do and works for streaming-scale
   // reliability AND startup range.
-  tagline: 'High pressure, hard problems. Sorted out fast.',
+  tagline: 'I sort out high pressure & hard problems, fast.',
   // The range story, in your own voice.
   blurb:
     '21 years turning chaos into calm: combat-zone satellite networking, hands-on exploit labs delivered over VDI, a TV station that couldn’t go dark, observability at streaming scale, robotic safety systems that must not fail, a bowling alley rebuilt from dirt, and DevOps for an enterprise reasoning platform. High pressure, hard problems. Sorted out fast.',
