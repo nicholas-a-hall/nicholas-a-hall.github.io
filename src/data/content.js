@@ -33,7 +33,7 @@ export const metrics = [
   { value: '20B', label: 'log entries / week at streaming scale' },
   { value: '$4M', label: 'annual cloud spend cut, zero observability lost' },
   { value: '$20M', label: 'ARR SaaS platform, led from zero to GA' },
-  { value: '9x', label: 'Increased developer velocity with reduced CICD pipeline time - 60m to 6.' },
+  { value: '10x', label: 'Increased developer velocity, reduced CICD pipeline time -- 60m to 6.' },
 ]
 
 // Social / contact links. Remove any you don't want; the icons map by `type`.
