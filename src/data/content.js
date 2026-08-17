@@ -58,7 +58,7 @@ export const about = {
   // Quick "facts about me" chips. Keep them human.
   facts: [
     'Army veteran',
-    'Dad',
+    'Father of 4',
     '21 years in tech',
     'Owns a bowling alley (my real-world homelab)',
     'Python daily driver',
@@ -94,7 +94,7 @@ export const skillGroups = [
   },
   {
     category: 'Data & Messaging',
-    skills: ['Kafka', 'MQTT', 'Redis', 'Postgres', 'MongoDB', 'Snowflake'],
+    skills: ['Kafka', 'MQTT', 'Redis', 'Postgres', 'MongoDB', 'Snowflake', 'Databricks', 'ESPNow'],
   },
 ]
 
@@ -111,21 +111,21 @@ export const projects = [
     featured: true,
   },
   {
-    title: 'Lunar Lanes',
-    org: 'Owner & Lead Engineer',
-    blurb:
-      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
-    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability', 'Edge'],
-    links: [{ type: 'link', label: 'lunarlanesbowl.com', url: 'https://lunarlanesbowl.com' }],
-    featured: true,
-  },
-  {
     title: 'OpenLaneLink',
     org: 'Lunar Lanes · open hardware + software stack',
     blurb:
       "The open hardware and software stack that runs the floor at Lunar Lanes. ESP32/ESP8266 devices publish over MQTT (Mosquitto) to a bridge that translates to Socket.IO; an Express backend holds canonical lane state in Redis and broadcasts real-time updates over WebSocket to a manager dashboard and four per-lane kiosk displays covering eight lanes, with two-way Google Calendar sync for reservations. The whole thing runs on Docker Compose and Helm, so the same stack comes up on a laptop or on the alley's own hardware.",
     tags: ['ESP32', 'MQTT', 'Socket.IO', 'Redis', 'React', 'Helm', 'Real-time', 'IoT'],
     links: [{ type: 'link', label: 'Technical Docs', url: 'https://nicholas-a-hall.github.io/openlanelink' }],
+    featured: true,
+  },  
+  {
+    title: 'Lunar Lanes',
+    org: 'Owner & Lead Engineer',
+    blurb:
+      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
+    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability', 'Edge'],
+    links: [{ type: 'link', label: 'lunarlanesbowl.com', url: 'https://lunarlanesbowl.com' }]
   },
   {
     title: 'MLOps Platform Engineering',
@@ -199,6 +199,16 @@ export const talks = [
     title: 'Adventures in (the Agentic AI) Space!',
     videoId: 'gMP5HoiDg3s',
     url: 'https://youtu.be/gMP5HoiDg3s',
+  },
+  {
+    title: 'OpenLaneLink Bowling Frontend',
+    videoId: 'c1zf4WLKRKo',
+    url: 'https://youtu.be/c1zf4WLKRKo',
+  },
+  {
+    title: 'Sometimes I make games as a hobby',
+    videoId: 'mHOfYplBzd8',
+    url: '  https://youtu.be/mHOfYplBzd8',
   },
 ]
 
