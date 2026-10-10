@@ -6,7 +6,7 @@ export default function Projects({ projects }) {
   return (
     <Section
       id="work"
-      kicker="04 / Project Work"
+      kicker="03 / Project Work"
       title="Selected engineering work"
       intro="The problems, the engineering decisions, and what changed. Cloud platforms, production AI, observability, and yes, bowling machines."
     >

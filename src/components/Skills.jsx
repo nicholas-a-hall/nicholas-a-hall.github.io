@@ -5,7 +5,7 @@ export default function Skills({ groups }) {
   return (
     <Section
       id="skills"
-      kicker="03 / Skills"
+      kicker="04 / Skills"
       title="What I work with"
       intro="A working toolkit, not a buzzword bingo card. These are the things I reach for and actually enjoy."
     >

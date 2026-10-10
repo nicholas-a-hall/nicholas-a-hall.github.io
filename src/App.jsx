@@ -66,8 +66,8 @@ export default function App() {
         <ImpactBand metrics={metrics} />
         <About about={about} principles={principles} />
         <Experience experience={experience} />
-        <Skills groups={skillGroups} />
         <Projects projects={projects} />
+        <Skills groups={skillGroups} />
         <Education education={education} />
         <Talks talks={talks} />
         <Testimonials testimonials={testimonials} />
