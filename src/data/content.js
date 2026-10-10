@@ -18,12 +18,12 @@ export const profile = {
     'I build tools and infrastructure that make development faster, reduce operational headaches, and save companies money. 21 years solving production engineering problems across AWS, GCP, Azure, Kubernetes, on-prem, and hybrid environments. From internal developer platforms to reliability and automation, I design, build, and operate systems that make complicated systems work fast, efficient and on-budget.',
   // Closing line for the contact section (straight from your LinkedIn).
   pitch:
-    "I like strange problems, useful systems, and the places where tech solves real world problems. If you have a headache technology could help with, I'm your guy.",
+    "I like strange problems, useful systems, and the places where tech makes life easier. If you have a headache technology could help with, I'm your guy.",
   location: 'Litchfield, Illinois',
   availability: 'Open to Staff/Principal IC & startup lead roles',
   email: 'nick@section33.io',
-  phone: '(618) 595-0262',
-  phoneUrl: 'tel:+16185950262',
+  phone: '(217) 608-0555',
+  phoneUrl: 'tel:+12176080555',
   resumeUrl: './resume.pdf', // full résumé PDF lives in /public
 }
 
