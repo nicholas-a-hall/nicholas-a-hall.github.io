@@ -219,7 +219,7 @@ export const experience = [
     company: 'Growth Protocol',
     period: 'May 2025 – Apr 2026',
     highlights: [
-      'Owned SOC 2 Type 1 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
+      'Owned SOC 2 Type 1 with Vanta, passing the final audit in 4 hours, rather than the initial 3-day allotment.',
       'Ran multi-cloud Kubernetes (GKE / AKS / EKS), consolidating 30+ Cloud Run microservices onto one deployable platform.',
       'Partnered with the Data and ML teams to rework their data storage strategy, speeding up model training and improving training data accuracy.',
     ],
@@ -240,9 +240,9 @@ export const experience = [
     period: 'Mar 2024 – Apr 2025',
     highlights: [
       'Cut CI/CD build times from 60 minutes to 6 by refactoring monolithic CI/CD pipleines, moving application deployments to helm, and creating immutable release artifacts',
-      'Assembled and led the DevOps team that cleared years of standing technical debt and turned fragile build pipelines into ones engineers stopped thinking about.',
+      'Assembled and led the DevOps team that cleared years of standing technical debt and improved reliability of fragile build pipelines to 95%',
       'Optimized, helped structure, and preserved roughly 750TB of unstructured robotics telemetry in S3 for model training.',
-      'Migrated platform services off EC2 / Docker Compose onto Kubernetes with Helm for repeatable releases and rollbacks.',
+      'Enabled repeatable releases and rollbacks by migrating platform services off EC2 / Docker Compose onto Kubernetes-based unified developer platform.',
     ],
   },
   {
@@ -251,8 +251,8 @@ export const experience = [
     period: 'Aug 2022 – Mar 2024',
     highlights: [
       'Owned incident response for a greenfield robotics-safety SaaS, authoring DR plans, on-call procedures, and runbooks.',
-      'Migrated services to Kubernetes, cutting deploy/recovery time 83% and improving RTO 87%.',
-      'Built 25 Helm charts that reduced new-tenant setup from a week to 30 minutes.',
+      'Cut deploy/recovery time 83% and improving RTO 87% following a large-scale migration to Kubernetes.',
+      'Reduced new-tenant setup from a week to 30 minutes with 25 helm charts and targeted terraform modules.',
       'Mentored junior and senior engineers on continuous-deployment best practices with Kubernetes.',
     ],
   },
