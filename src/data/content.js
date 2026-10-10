@@ -169,9 +169,9 @@ export const projects = [
   },
   {
     title: 'SOC 2 Certification',
-    org: 'Growth Protocol',
+    org: 'Growth Protocol, Graylog',
     blurb:
-      'Led the engineering side of SOC 2 at an early-stage startup: Type 1 in under three months, Type 2 in six. The first-time Type 1 audit was blocked for three days; auditors finished in an afternoon. Implemented technical controls across the full surface (access, change management, active security monitoring) in Vanta, with hands-on remediation across cloud infra. One example: standing up cloud intrusion-detection alerting end-to-end for continuous-monitoring, wired into the pipeline rather than checked off on paper. SOC 2 is the gate that blocks enterprise sales, and at a small company it usually eats months. Hitting both fast and clean on a first audit is the differentiator.',
+      'Led the engineering side of SOC 2 at an early-stage startup: Type 1 in under three months at GP. Type 2 at Graylog. The first-time Type 1 audit was slated to take three days at Growth Protocol; auditors finished in an afternoon. Implemented technical controls across the full surface (access, change management, active security monitoring) in Vanta, with hands-on remediation across cloud infra. One example: standing up cloud intrusion-detection alerting end-to-end for continuous-monitoring, wired into the pipeline rather than checked off on paper. SOC 2 is the gate that blocks enterprise sales, and at a small company it usually eats months. Hitting both fast and clean on a first audit is the differentiator.',
     tags: ['SOC 2', 'Vanta', 'Security', 'Compliance', 'Cloud IDS'],
     links: [],
   },
