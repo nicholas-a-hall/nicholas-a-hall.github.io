@@ -241,7 +241,7 @@ export const projects = [
 
     title: 'Integrated Observability Platform',
 
-    org: 'Multiple production environments',
+    org: 'Paramount, FORT Robotics, Formant, Growth Protocol',
 
     blurb:
 
@@ -251,13 +251,15 @@ export const projects = [
 
     links: [],
 
+    featured: true,
+
   },
 
   {
 
     title: 'Incident Command Systems',
 
-    org: 'Multiple engineering orgs',
+    org: 'KSDK-TV, Graylog, FORT Robotics, Formant, Growth Protocol',
 
     blurb:
 
@@ -266,6 +268,8 @@ export const projects = [
     tags: ['Incident Response', 'On-call', 'Postmortems', 'Alerting', 'SRE'],
 
     links: [],
+
+    featured: true,
 
   },
 
