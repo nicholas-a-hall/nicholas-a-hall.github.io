@@ -4,11 +4,9 @@ import './Navbar.css'
 
 const LINKS = [
   { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#work', label: 'Work' },
-  { href: '#talks', label: 'Talks' },
   { href: '#experience', label: 'Experience' },
-  { href: '#education', label: 'Education' },
+  { href: '#work', label: 'Projects' },
+  { href: '#talks', label: 'Talks' },
   { href: '#recommendations', label: 'Praise' },
   { href: '#contact', label: 'Contact' },
 ]
