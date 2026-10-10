@@ -48,10 +48,10 @@ export default function ProjectCard({ project }) {
 
         {hasCaseStudy ? (
           <div className="project__case-study">
-            <ProjectSection heading="Challenge" >{challenge}</ProjectSection>
-            <ProjectSection heading="Approach & Delivery">{approach}</ProjectSection>
+            <ProjectSection heading="Context" >{challenge}</ProjectSection>
+            <ProjectSection heading="Approach">{approach}</ProjectSection>
             <ProjectSection heading="Impact">{impact}</ProjectSection>
-            <ProjectSection heading="What's next">{nextSteps}</ProjectSection>
+            <ProjectSection heading="Next">{nextSteps}</ProjectSection>
           </div>
         ) : (
           <div className="project__overview">
