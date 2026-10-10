@@ -12,10 +12,10 @@ export const profile = {
   title: 'Nicholas Hall · Staff/Principal Platform & Site Reliability Engineer',
   // The spine: one line that says what you do and works for streaming-scale
   // reliability AND startup range.
-  tagline: 'I sort out high pressure & hard problems, fast.',
+  tagline: 'I sort out complex architecture and solve hard problems, fast.',
   // The range story, in your own voice.
   blurb:
-    '21 years turning chaos into calm: combat-zone satellite networking, hands-on exploit labs delivered over VDI, a TV station that couldn’t go dark, observability at streaming scale, robotic safety systems that must not fail, a bowling alley rebuilt from dirt, and DevOps for an enterprise reasoning platform. High pressure, hard problems. Sorted out fast.',
+    'I build tools and infrastructure that make development faster, reduce operational headaches, and save companies money. 21 years solving production engineering problems across AWS, GCP, Azure, Kubernetes, on-prem, and hybrid environments. From internal developer platforms to reliability and automation, I design, build, and operate systems that make complicated systems work fast, efficient and on-budget.',
   // Closing line for the contact section (straight from your LinkedIn).
   pitch:
     "I like strange problems, useful systems, and the places where tech solves real world problems. If you have a headache technology could help with, I'm your guy.",
@@ -33,7 +33,7 @@ export const metrics = [
   { value: '20B', label: 'log entries / week at streaming scale' },
   { value: '$4M', label: 'annual cloud spend cut, zero observability lost' },
   { value: '$20M', label: 'ARR SaaS platform, led from zero to GA' },
-  { value: '10x', label: 'Increased developer velocity, reduced CICD pipeline time -- 60m to 6.' },
+  { value: '10x', label: 'Increased developer velocity, reduced build times from 60m to 6.' },
 ]
 
 // Social / contact links. Remove any you don't want; the icons map by `type`.
