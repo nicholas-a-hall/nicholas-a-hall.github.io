@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -26,23 +27,40 @@ import {
 } from './data/content'
 
 export default function App() {
-  // Theme: persisted, defaults to dark, respects OS preference on first visit.
-  const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem('theme')
-    if (saved) return saved
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
-  })
+  // Must match the initial server render for hydration.
+  const [theme, setTheme] = useState('dark')
 
+  // Restore the saved preference or OS preference after hydration.
+  useEffect(() => {
+    const saved = localStorage.getItem('theme')
+
+    if (saved === 'light' || saved === 'dark') {
+      setTheme(saved)
+    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      setTheme('light')
+    }
+  }, [])
+
+  // Apply the theme and persist changes after hydration.
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('theme', theme)
   }, [theme])
 
-  const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
+  const toggleTheme = () => {
+    setTheme((current) => {
+      const next = current === 'dark' ? 'light' : 'dark'
+      localStorage.setItem('theme', next)
+      return next
+    })
+  }
 
   return (
     <>
-      <Navbar name={profile.fullName} theme={theme} onToggleTheme={toggleTheme} />
+      <Navbar
+        name={profile.fullName}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
       <main>
         <Hero profile={profile} socials={socials} />
         <ImpactBand metrics={metrics} />

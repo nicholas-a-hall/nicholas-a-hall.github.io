@@ -276,7 +276,7 @@ export const experience = [
   },
   {
     role: 'IT Manager',
-    company: 'KSDK-TV / NBC',
+    company: 'KSDK-TV / TEGNA',
     period: 'May 2016 – Apr 2019',
     highlights: [
       'Led an IT team building Python/PowerShell automation that reduced rework 97% and saved 160 hours a year.',

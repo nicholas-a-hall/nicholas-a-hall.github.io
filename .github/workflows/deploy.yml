@@ -25,7 +25,18 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npm run build
+
+      - name: Build and prerender portfolio
+        run: npm run build:prerender
+
+      - name: Validate crawlable output
+        run: |
+          test -s dist/index.html
+          grep -qi "Nicholas Hall" dist/index.html
+          grep -qi "Kubernetes" dist/index.html
+          grep -qi "Formant" dist/index.html
+          grep -qi "Paramount" dist/index.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
