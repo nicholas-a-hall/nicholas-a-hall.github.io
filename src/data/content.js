@@ -125,7 +125,7 @@ export const projects = [
     blurb:
       'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
     tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability', 'Edge'],
-    links: [{ type: 'link', label: 'lunarlanesbowl.com', url: 'https://lunarlanesbowl.com' }]
+    links: []
   },
   {
     title: 'MLOps Platform Engineering',
@@ -220,7 +220,6 @@ export const experience = [
     period: 'May 2025 – Apr 2026',
     highlights: [
       'Owned SOC 2 Type 1 end-to-end as primary responsible engineer, passing the audit in 4 hours against a 3-day window.',
-      'Moved deployments to GitOps (ArgoCD + Helm), cutting CI/CD build times from 60 minutes to 6.',
       'Ran multi-cloud Kubernetes (GKE / AKS / EKS), consolidating 30+ Cloud Run microservices onto one deployable platform.',
       'Partnered with the Data and ML teams to rework their data storage strategy, speeding up model training and improving training data accuracy.',
     ],
@@ -228,7 +227,7 @@ export const experience = [
   {
     role: 'Owner & Lead Engineer',
     company: 'Lunar Lanes',
-    period: 'Dec 2025 – Present',
+    period: 'Dec 2025 – Sep 2026',
     highlights: [
       'Took a bowling alley from unimproved land to operational in 90 days, owning architecture, reliability, cost, and P&L.',
       'Built an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32, ESPNow, RS485, MQTT).',
@@ -240,6 +239,7 @@ export const experience = [
     company: 'Formant',
     period: 'Mar 2024 – Apr 2025',
     highlights: [
+      'Cut CI/CD build times from 60 minutes to 6 by refactoring monolithic CI/CD pipleines, moving application deployments to helm, and creating immutable release artifacts',
       'Assembled and led the DevOps team that cleared years of standing technical debt and turned fragile build pipelines into ones engineers stopped thinking about.',
       'Optimized, helped structure, and preserved roughly 750TB of unstructured robotics telemetry in S3 for model training.',
       'Migrated platform services off EC2 / Docker Compose onto Kubernetes with Helm for repeatable releases and rollbacks.',
