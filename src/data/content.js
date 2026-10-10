@@ -78,7 +78,7 @@ export const skillGroups = [
   },
   {
     category: 'Platform & Infrastructure',
-    skills: ['Kubernetes', 'Helm', 'Terraform', 'ArgoCD', 'GitOps', 'CI/CD', 'GitHub Actions', 'GitLab CI', 'Jenkins', 'Docker', 'Ansible', 'Linux'],
+    skills: ['Kubernetes', 'Helm', 'Terraform', 'ArgoCD', 'GitOps', 'CI/CD', 'GitHub Actions', 'GitLab CI', 'Jenkins', 'Azure Devops', 'Docker', 'Ansible', 'Linux'],
   },
   {
     category: 'Cloud (multi-cloud)',
@@ -90,11 +90,11 @@ export const skillGroups = [
   },
   {
     category: 'Security & Compliance',
-    skills: ['SOC 2 Type 2', 'Audit readiness', 'IAM', 'Secrets management'],
+    skills: ['SOC 2', 'Vault', 'IAM', 'Secrets management', 'ExternalSecrets Operator'],
   },
   {
     category: 'Data & Messaging',
-    skills: ['Kafka', 'MQTT', 'Redis', 'Postgres', 'MongoDB', 'Snowflake', 'Databricks', 'ESPNow'],
+    skills: ['Kafka', 'Redis', 'Postgres', 'MongoDB', 'RDS', 'Snowflake', 'Databricks', 'ESPNow', 'MQTT'],
   },
 ]
 
@@ -235,7 +235,7 @@ export const experience = [
     ],
   },
   {
-    role: 'DevOps Technical Lead',
+    role: 'DevOps Technical Lead (Impacted by ~30% Company-wide RIF)',
     company: 'Formant',
     period: 'Mar 2024 – Apr 2025',
     highlights: [
@@ -250,7 +250,7 @@ export const experience = [
     company: 'FORT Robotics',
     period: 'Aug 2022 – Mar 2024',
     highlights: [
-      'Owned incident response for a greenfield robotics-safety SaaS, authoring DR plans, on-call procedures, and runbooks.',
+      'Created incident response protocol for a greenfield robotics-safety SaaS, authoring DR plans, on-call procedures, and runbooks.',
       'Cut deploy/recovery time 83% and improving RTO 87% following a large-scale migration to Kubernetes.',
       'Reduced new-tenant setup from a week to 30 minutes with 25 helm charts and targeted terraform modules.',
       'Mentored junior and senior engineers on continuous-deployment best practices with Kubernetes.',
