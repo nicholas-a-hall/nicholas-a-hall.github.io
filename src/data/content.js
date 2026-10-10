@@ -309,14 +309,14 @@ export const experience = [
 // Education & training.
 export const education = [
   {
-    school: 'Cochise College',
+    school: 'Cochise College (US Army correspondence program)',
     detail: 'Military Information Systems Technology',
     period: '2005 – 2006',
   },
   {
     school: 'U.S. Army',
     detail: 'Military intelligence systems training: electronics, RF & satellite comms',
-    period: '2005 – 2011',
+    period: '2005 – 2006',
   },
 ]
 
