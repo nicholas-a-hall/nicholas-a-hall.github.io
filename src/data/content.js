@@ -12,10 +12,10 @@ export const profile = {
   title: 'Nicholas Hall · Staff/Principal Platform & Site Reliability Engineer',
   // The spine: one line that says what you do and works for streaming-scale
   // reliability AND startup range.
-  tagline: 'I sort out complex architecture and solve hard problems, fast.',
+  tagline: 'I simplify complexity and solve hard problems, fast.',
   // The range story, in your own voice.
   blurb:
-    'I build tools and infrastructure that make development faster, reduce operational headaches, and save companies money. 21 years solving production engineering problems across AWS, GCP, Azure, Kubernetes, on-prem, and hybrid environments. From internal developer platforms to reliability and automation, I design, build, and operate systems that make complicated systems work fast, efficient and on-budget.',
+    'I build tools and infrastructure that make development faster, reduce operational headaches, and save companies money. 21 years solving production engineering problems across AWS, GCP, Azure, Kubernetes, on-prem, and hybrid environments. From internal developer platforms to reliability and automation; I design, build, and operate systems that make distributed systems work reliably, efficiently and on a budget.',
   // Closing line for the contact section (straight from your LinkedIn).
   pitch:
     "I like strange problems, useful systems, and the places where tech makes life easier. If you have a headache technology could help with, I'm your guy.",
@@ -30,10 +30,10 @@ export const profile = {
 // Headline proof, shown as a band right under the hero so recruiters hit your
 // best numbers in the first screen instead of digging for them.
 export const metrics = [
-  { value: '20B', label: 'log entries / week at streaming scale' },
   { value: '$4M', label: 'annual cloud spend cut, zero observability lost' },
   { value: '$20M', label: 'ARR SaaS platform, led from zero to GA' },
-  { value: '10x', label: 'Increased developer velocity, reduced build times from 60m to 6.' },
+  { value: '20B', label: 'log entries / week at streaming scale' },
+  { value: '10x', label: 'Increased developer velocity, reduced build + deploy cycle time from 60m to 6.' },
 ]
 
 // Social / contact links. Remove any you don't want; the icons map by `type`.
@@ -124,7 +124,7 @@ export const projects = [
     org: 'Owner & Lead Engineer',
     blurb:
       'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
-    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability', 'Edge'],
+    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
     links: []
   },
   {
@@ -137,10 +137,10 @@ export const projects = [
   },
   {
     title: 'CanaryBot: LLM Incident-Response Agent',
-    org: 'Growth Protocol',
+    org: 'Growth Protocol & Formant',
     blurb:
       'An LLM-assisted incident-response bot connecting alerting workflows to a conversational interface in Slack. It relays operational alerts and answers the questions that eat time during active response (what happened, when it started, what changed, what signals fired), keeping incident context in one place so the team can focus on diagnosis, mitigation, and recovery instead of digging through scattered logs and chat.',
-    tags: ['LLM', 'Prompt Engineering', 'Slack', 'Incident Response', 'SRE'],
+    tags: ['LLM', 'Python', 'Prompt Engineering', 'Slack', 'Incident Response', 'SRE'],
     links: [],
   },
   {
@@ -148,7 +148,7 @@ export const projects = [
     org: 'Lunar Lanes',
     blurb:
       'A production AI voice agent answering live customer calls for Lunar Lanes on Zoom Phone AI. It identifies itself as an AI on pickup, handles common questions in a consistent persona, and hands transactional requests (booking, lane availability) off to dedicated skills. I engineered the knowledge base from scratch (hours, two pricing modes with per-game vs hourly break-even math, the ownership/restoration story, payments, accessibility, conduct), and designed a stable persona so it carries calls that were never explicitly scripted, while keeping back-of-house policy out of public answers.',
-    tags: ['Conversational AI', 'Prompt Engineering', 'Zoom Phone AI', 'Voice', 'LLM'],
+    tags: ['Conversational AI', 'Prompt Engineering', 'Zoom Phone AI', 'VoIP', 'LLM'],
     links: [],
   },
   {
