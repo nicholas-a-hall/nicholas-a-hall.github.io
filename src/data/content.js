@@ -261,16 +261,16 @@ export const experience = [
     company: 'Paramount+ / Paramount Global',
     period: 'Jan 2022 – Aug 2022',
     highlights: [
-      'Operated Elasticsearch on Kubernetes (ECK) for a streaming platform processing 20 billion log entries per week.',
-      'Made the cost-vs-reliability call that cut $4M/year in GCP spend without degrading observability.',
+      'Processed 20 billion log entries per week for global streaming platform using Elasticsearch on Kubernetes (ECK).',
+      'Cut $4M/year in GCP spend without degrading observability with fluentbit sidecars and pre-ingestion logging libraries.',
     ],
   },
   {
-    role: 'Senior Site Reliability Engineer',
+    role: 'Cloud Team Lead',
     company: 'Graylog',
     period: 'Jan 2020 – Dec 2021',
     highlights: [
-      'Led development of Graylog Cloud (AWS SaaS) as project organizer and team lead, through SOC 2, beta, GA, and on to $20M ARR.',
+      'Led the cloud infrastructure buildout of Graylog Cloud (AWS SaaS) as project organizer and team lead, through SOC 2, beta, GA, and on to $20M ARR.',
       'Built a Go load-testing platform generating 200,000 logging requests/second at production scale.',
     ],
   },
