@@ -6,7 +6,7 @@ export default function Projects({ projects }) {
   return (
     <Section
       id="work"
-      kicker="03 / Work"
+      kicker="05 / Project Work"
       title="Things I've built"
       intro="Platforms, tools, and systems I've owned end-to-end. Developer platforms, observability, production AI, and yes, a bowling alley. Happy to go deep on any of them."
     >

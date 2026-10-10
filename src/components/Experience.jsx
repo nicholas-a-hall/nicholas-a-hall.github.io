@@ -5,7 +5,7 @@ export default function Experience({ experience }) {
   return (
     <Section
       id="experience"
-      kicker="05 / Experience"
+      kicker="02 / Experience"
       title="Where I've been"
       intro="The short version. The longer version is a good conversation over coffee."
     >

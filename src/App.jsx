@@ -17,11 +17,11 @@ import {
   socials,
   about,
   metrics,
+  experience,
   skillGroups,
+  education,
   projects,
   talks,
-  experience,
-  education,
   testimonials,
   principles,
 } from './data/content'

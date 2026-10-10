@@ -6,7 +6,7 @@ export default function Talks({ talks }) {
   return (
     <Section
       id="talks"
-      kicker="04 / Talks"
+      kicker="06 / Talks"
       title="Talks & speaking"
       intro="Occasionally I get up in front of people and talk about this stuff."
     >
