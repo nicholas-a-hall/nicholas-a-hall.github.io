@@ -65,11 +65,11 @@ export default function App() {
         <Hero profile={profile} socials={socials} />
         <ImpactBand metrics={metrics} />
         <About about={about} principles={principles} />
+        <Experience experience={experience} />
         <Skills groups={skillGroups} />
         <Projects projects={projects} />
-        <Talks talks={talks} />
-        <Experience experience={experience} />
         <Education education={education} />
+        <Talks talks={talks} />
         <Testimonials testimonials={testimonials} />
         <Contact profile={profile} socials={socials} />
       </main>

@@ -370,8 +370,8 @@ export const testimonials = [
 
 // What I specialize in, straight from the way you describe yourself.
 export const principles = [
-  { title: 'Systems that heal themselves', body: "Give me a platform with unpredictable load and I'll build it to figure out its own horsepower, no one babysitting it at 2am." },
-  { title: 'Kill the friction between teams', body: "If developers and infra are fighting over a deployment, I'll walk over, ask questions, and fix it. That's just how I'm wired." },
+  { title: 'Create systems that heal themselves', body: "Give me a platform with unpredictable load and I'll build it to figure out its own horsepower, no one babysitting it at 2am." },
+  { title: 'Eliminate friction between teams', body: "If developers and infra are fighting over a deployment, I'll walk over, ask questions, and fix it. That's just how I'm wired." },
   { title: 'Learn ridiculously fast', body: "Kubernetes to embedded microcontrollers, satcom to MLOps: if it's useful, I'll figure it out in days. The domain changes. The pattern doesn't." },
   { title: 'Make AI survive production', body: "The model is the easy part. The hard part is keeping AI deployable, observable, and reliable after launch. I build the MLOps and the agents themselves: a voice receptionist taking live calls, a bot that holds context through an incident." },
   { title: 'Leave teams stronger than I found them', body: "Trained 12 in the Army. Built the automation program at KSDK. Assembled Formant's DevOps team. Mentored seniors and juniors at FORT. The recommendations below say it in other people's words." },
