@@ -139,6 +139,38 @@ export const projects = [
 
   {
 
+    title: 'Integrated Observability Platform',
+
+    org: 'Paramount, FORT Robotics, Formant, Growth Protocol',
+
+    blurb:
+
+      "Built and operated observability platforms across cloud-native services, Kubernetes, and AI/ML workloads. OpenTelemetry served as the translation and transport layer between workloads, collectors, backends, and alerting. I pushed teams toward native first-party instrumentation, and used the OTel Operator's auto-injection where it wasn't yet in place for faster visibility. Prometheus, Grafana, Alertmanager, Elasticsearch, and Jaeger, wired into Slack-based alerting and incident response.",
+
+    tags: ['OpenTelemetry', 'Prometheus', 'Grafana', 'Jaeger', 'Elasticsearch', 'Kubernetes'],
+
+    links: [],
+
+  },
+
+  {
+
+    title: 'Incident Command Systems',
+
+    org: 'KSDK-TV, Graylog, FORT Robotics, Formant, Growth Protocol',
+
+    blurb:
+
+      'Stood up incident command systems that moved response out of ad-hoc heroics and into a repeatable operating model teams trust under pressure. Defined roles, severity models, escalation paths, and Slack-based response channels; integrated alerting, observability, and timeline capture; and established postmortem practice and clean handoffs between engineering, platform, customer-facing, and leadership.',
+
+    tags: ['Incident Response', 'On-call', 'Postmortems', 'Alerting', 'SRE'],
+
+    links: [],
+
+  },
+
+  {
+
     title: 'SOC 2 Engineering & Audit Readiness',
 
     org: 'Growth Protocol · Graylog',
@@ -269,42 +301,6 @@ export const projects = [
     tags: ['Conversational AI', 'Prompt Engineering', 'Zoom Phone AI', 'VoIP', 'LLM'],
 
     links: [],
-
-  },
-
-  {
-
-    title: 'Integrated Observability Platform',
-
-    org: 'Paramount, FORT Robotics, Formant, Growth Protocol',
-
-    blurb:
-
-      "Built and operated observability platforms across cloud-native services, Kubernetes, and AI/ML workloads. OpenTelemetry served as the translation and transport layer between workloads, collectors, backends, and alerting. I pushed teams toward native first-party instrumentation, and used the OTel Operator's auto-injection where it wasn't yet in place for faster visibility. Prometheus, Grafana, Alertmanager, Elasticsearch, and Jaeger, wired into Slack-based alerting and incident response.",
-
-    tags: ['OpenTelemetry', 'Prometheus', 'Grafana', 'Jaeger', 'Elasticsearch', 'Kubernetes'],
-
-    links: [],
-
-    featured: true,
-
-  },
-
-  {
-
-    title: 'Incident Command Systems',
-
-    org: 'KSDK-TV, Graylog, FORT Robotics, Formant, Growth Protocol',
-
-    blurb:
-
-      'Stood up incident command systems that moved response out of ad-hoc heroics and into a repeatable operating model teams trust under pressure. Defined roles, severity models, escalation paths, and Slack-based response channels; integrated alerting, observability, and timeline capture; and established postmortem practice and clean handoffs between engineering, platform, customer-facing, and leadership.',
-
-    tags: ['Incident Response', 'On-call', 'Postmortems', 'Alerting', 'SRE'],
-
-    links: [],
-
-    featured: true,
 
   },
 
