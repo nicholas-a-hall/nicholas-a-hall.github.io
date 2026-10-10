@@ -203,7 +203,21 @@ export const projects = [
     featured: true,
 
   },
+  {
 
+    title: 'CanaryBot: LLM Incident-Response Agent',
+
+    org: 'Growth Protocol & Formant',
+
+    blurb:
+
+      'An LLM-assisted incident-response bot connecting alerting workflows to a conversational interface in Slack. It relays operational alerts and answers the questions that eat time during active response (what happened, when it started, what changed, what signals fired), keeping incident context in one place so the team can focus on diagnosis, mitigation, and recovery instead of digging through scattered logs and chat.',
+
+    tags: ['LLM', 'Python', 'Prompt Engineering', 'Slack', 'Incident Response', 'SRE'],
+
+    links: [],
+
+  },
   {
 
     title: 'MLOps Platform Engineering',
@@ -217,22 +231,6 @@ export const projects = [
     tags: ['MLOps', 'Vertex AI', 'GCP', 'Observability', 'SRE'],
 
     links: [],
-
-  },
-
-  {
-
-    title: 'Lunar Lanes',
-
-    org: 'Owner & Lead Engineer',
-
-    blurb:
-
-      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
-
-    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
-
-    links: []
 
   },
 
@@ -274,20 +272,19 @@ export const projects = [
 
   {
 
-    title: 'CanaryBot: LLM Incident-Response Agent',
+    title: 'Lunar Lanes',
 
-    org: 'Growth Protocol & Formant',
+    org: 'Owner & Lead Engineer',
 
     blurb:
 
-      'An LLM-assisted incident-response bot connecting alerting workflows to a conversational interface in Slack. It relays operational alerts and answers the questions that eat time during active response (what happened, when it started, what changed, what signals fired), keeping incident context in one place so the team can focus on diagnosis, mitigation, and recovery instead of digging through scattered logs and chat.',
+      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
 
-    tags: ['LLM', 'Python', 'Prompt Engineering', 'Slack', 'Incident Response', 'SRE'],
+    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
 
-    links: [],
+    links: []
 
   },
-
   {
 
     title: 'Theia: Production AI Voice Receptionist',
