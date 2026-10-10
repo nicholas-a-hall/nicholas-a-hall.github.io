@@ -139,6 +139,73 @@ export const projects = [
 
   {
 
+    title: 'SOC 2 Engineering & Audit Readiness',
+
+    org: 'Growth Protocol · Graylog',
+
+    summary: 'Turning security requirements into working operational controls instead of an audit-time scramble.',
+    metrics: [
+      { value: 'Type I', label: 'Growth Protocol' },
+      { value: 'Type II', label: 'Graylog' },
+      { value: '< 3 months', label: 'Growth Protocol audit readiness' },
+    ],
+    challenge: 'Enterprise customers need evidence that the infrastructure is secure and properly operated. At smaller teams, preparing for SOC 2 can pull engineers away from product delivery for months.',
+    approach: [
+      'At Growth Protocol, owned the technical implementation for SOC 2 Type I: access control, change management, security monitoring, cloud remediation, and evidence tracking through Vanta.',
+      'Integrated cloud intrusion-detection alerting into real operations instead of treating it as a paperwork requirement.',
+      'At Graylog, helped take the cloud platform through SOC 2 Type II as part of building and launching Graylog Cloud.',
+    ],
+    impact: [
+      'Growth Protocol was ready for its Type I audit in under three months; an audit scheduled for three days finished in an afternoon.',
+      'Supported Graylog Cloud through SOC 2 Type II with controls built into platform operations and delivery.',
+    ],
+    blurb:
+
+      "I've taken two engineering organizations through SOC 2 work: Type I at Growth Protocol and Type II at Graylog. Different companies, different environments, same basic problem: turning security and compliance requirements into controls that actually work in production.\n\n" +
+      "At Growth Protocol, I owned the technical implementation for SOC 2 Type I, getting the company audit-ready in under three months. The auditors had reserved three days for the first audit and finished in an afternoon. I implemented controls across access management, change management, security monitoring, and cloud infrastructure, using Vanta to organize evidence and track remediation. That included building cloud intrusion-detection alerting into the operational workflow instead of treating monitoring as an audit checkbox.\n\n" +
+      "At Graylog, I helped take the cloud platform through SOC 2 Type II as part of building and launching Graylog Cloud. Compliance matters because enterprise customers need to trust the platform before they'll put their data on it. My approach is to build those requirements into the infrastructure and delivery process from the start, rather than scramble to bolt them on when an auditor shows up.",
+    tags: ['SOC 2', 'Vanta', 'Security', 'Compliance', 'Cloud IDS'],
+
+    links: [],
+
+    featured: true,
+
+  },
+
+  {
+
+    title: 'MLOps Platform Engineering',
+
+    org: 'Growth Protocol',
+
+    blurb:
+
+      'Production infrastructure for AI/ML-enabled services, the operational side of AI: making AI-backed systems deployable, observable, debuggable, and maintainable in real production. Cloud runtime support, deployment automation, and telemetry/logging/alerting wired into incident response, applying SRE and platform practices to practical MLOps on Vertex AI.',
+
+    tags: ['MLOps', 'Vertex AI', 'GCP', 'Observability', 'SRE'],
+
+    links: [],
+
+  },
+
+  {
+
+    title: 'Lunar Lanes',
+
+    org: 'Owner & Lead Engineer',
+
+    blurb:
+
+      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
+
+    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
+
+    links: []
+
+  },
+
+  {
+
     title: 'OpenLaneLink',
 
     org: 'Lunar Lanes · open hardware + software stack',
@@ -172,38 +239,6 @@ export const projects = [
     featured: true,
 
   },  
-
-  {
-
-    title: 'Lunar Lanes',
-
-    org: 'Owner & Lead Engineer',
-
-    blurb:
-
-      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
-
-    tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
-
-    links: []
-
-  },
-
-  {
-
-    title: 'MLOps Platform Engineering',
-
-    org: 'Growth Protocol',
-
-    blurb:
-
-      'Production infrastructure for AI/ML-enabled services, the operational side of AI: making AI-backed systems deployable, observable, debuggable, and maintainable in real production. Cloud runtime support, deployment automation, and telemetry/logging/alerting wired into incident response, applying SRE and platform practices to practical MLOps on Vertex AI.',
-
-    tags: ['MLOps', 'Vertex AI', 'GCP', 'Observability', 'SRE'],
-
-    links: [],
-
-  },
 
   {
 
@@ -266,41 +301,6 @@ export const projects = [
       'Stood up incident command systems that moved response out of ad-hoc heroics and into a repeatable operating model teams trust under pressure. Defined roles, severity models, escalation paths, and Slack-based response channels; integrated alerting, observability, and timeline capture; and established postmortem practice and clean handoffs between engineering, platform, customer-facing, and leadership.',
 
     tags: ['Incident Response', 'On-call', 'Postmortems', 'Alerting', 'SRE'],
-
-    links: [],
-
-    featured: true,
-
-  },
-
-  {
-
-    title: 'SOC 2 Engineering & Audit Readiness',
-
-    org: 'Growth Protocol · Graylog',
-
-    summary: 'Turning security requirements into working operational controls instead of an audit-time scramble.',
-    metrics: [
-      { value: 'Type I', label: 'Growth Protocol' },
-      { value: 'Type II', label: 'Graylog' },
-      { value: '< 3 months', label: 'Growth Protocol audit readiness' },
-    ],
-    challenge: 'Enterprise customers need evidence that the infrastructure is secure and properly operated. At smaller teams, preparing for SOC 2 can pull engineers away from product delivery for months.',
-    approach: [
-      'At Growth Protocol, owned the technical implementation for SOC 2 Type I: access control, change management, security monitoring, cloud remediation, and evidence tracking through Vanta.',
-      'Integrated cloud intrusion-detection alerting into real operations instead of treating it as a paperwork requirement.',
-      'At Graylog, helped take the cloud platform through SOC 2 Type II as part of building and launching Graylog Cloud.',
-    ],
-    impact: [
-      'Growth Protocol was ready for its Type I audit in under three months; an audit scheduled for three days finished in an afternoon.',
-      'Supported Graylog Cloud through SOC 2 Type II with controls built into platform operations and delivery.',
-    ],
-    blurb:
-
-      "I've taken two engineering organizations through SOC 2 work: Type I at Growth Protocol and Type II at Graylog. Different companies, different environments, same basic problem: turning security and compliance requirements into controls that actually work in production.\n\n" +
-      "At Growth Protocol, I owned the technical implementation for SOC 2 Type I, getting the company audit-ready in under three months. The auditors had reserved three days for the first audit and finished in an afternoon. I implemented controls across access management, change management, security monitoring, and cloud infrastructure, using Vanta to organize evidence and track remediation. That included building cloud intrusion-detection alerting into the operational workflow instead of treating monitoring as an audit checkbox.\n\n" +
-      "At Graylog, I helped take the cloud platform through SOC 2 Type II as part of building and launching Graylog Cloud. Compliance matters because enterprise customers need to trust the platform before they'll put their data on it. My approach is to build those requirements into the infrastructure and delivery process from the start, rather than scramble to bolt them on when an auditor shows up.",
-    tags: ['SOC 2', 'Vanta', 'Security', 'Compliance', 'Cloud IDS'],
 
     links: [],
 
