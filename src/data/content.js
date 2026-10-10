@@ -31,7 +31,7 @@ export const profile = {
 // best numbers in the first screen instead of digging for them.
 export const metrics = [
   { value: '$4M', label: 'annual cloud spend cut, zero observability lost' },
-  { value: '$20M', label: 'ARR SaaS platform, led from zero to GA' },
+  { value: '$20M', label: 'ARR SaaS platform; Led the cloud engineering team that built and launched Graylog Cloud.' },
   { value: '20B', label: 'log entries / week at streaming scale' },
   { value: '10x', label: 'Increased developer velocity, reduced build + deploy cycle time from 60m to 6.' },
 ]
