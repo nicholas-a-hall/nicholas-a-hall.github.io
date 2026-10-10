@@ -103,8 +103,13 @@ export const projects = [
     title: 'Self-Service Kubernetes Platform',
     org: 'Internal developer platform · multiple orgs, since 2022',
     blurb:
-      "My standard Kubernetes pattern across multiple orgs: an opinionated, self-service internal developer platform, portable across clouds and into on-prem customer environments. The platform layer ships as a series of operators defined in Terraform: Istio, OpenTelemetry, Elasticsearch via ECK, the Prometheus and Grafana operators, External Secrets, cert-manager, and the Nginx ingress controller, with ArgoCD and onboard Vault secrets management as optional add-ons. Application delivery is kept separate on purpose: Helm is invoked directly by CI/CD rather than through Terraform, which keeps rollbacks clean and values files easy to change. The result is a paved road: a developer deploys their app and inherits mTLS, secrets, config, feature flags, tracing, metrics, and alerting by default, with the monitors and alerts declared as CRDs in the app's own Helm chart, so every workload arrives instrumented and alerting from day one.",
-    tags: ['Kubernetes', 'Terraform', 'Operators', 'Helm', 'Istio', 'OpenTelemetry', 'ArgoCD', 'Multi-cloud'],
+      "Developers shouldn't need a platform engineer and three Jira tickets just to ship an application. I've built this same general Kubernetes pattern across multiple organizations: a portable, self-service platform where developers can deploy their own workloads and get the infrastructure they need without reinventing it every time.\n\n" +
+      "Terraform manages the platform layer: Istio, OpenTelemetry, Elasticsearch via ECK, Prometheus, Grafana, External Secrets, cert-manager, and Nginx ingress, with ArgoCD and Vault available where needed. Application delivery is deliberately separate. CI/CD invokes Helm directly rather than pushing application releases through Terraform. Different lifecycles, clean rollbacks, and developers can change their own values without touching the underlying platform.\n\n" +
+      "The result is a paved road. Developers ship an application and inherit mTLS, secrets, configuration, feature flags, tracing, metrics, and alerting by default. Monitors and alerts live as CRDs alongside the application in its Helm chart. The same patterns work across AWS, GCP, Azure, and customer-owned infrastructure. Platform engineering should remove obstacles, not become one.",
+    tags: [
+      'Kubernetes', 'Terraform', 'Operators', 'Helm',
+      'Istio', 'OpenTelemetry', 'ArgoCD', 'Multi-cloud'
+    ],
     links: [],
     featured: true,
   },
@@ -112,11 +117,23 @@ export const projects = [
     title: 'OpenLaneLink',
     org: 'Lunar Lanes · open hardware + software stack',
     blurb:
-      "The open hardware and software stack that runs the floor at Lunar Lanes. ESP32/ESP8266 devices publish over MQTT (Mosquitto) to a bridge that translates to Socket.IO; an Express backend holds canonical lane state in Redis and broadcasts real-time updates over WebSocket to a manager dashboard and four per-lane kiosk displays covering eight lanes, with two-way Google Calendar sync for reservations. The whole thing runs on Docker Compose and Helm, so the same stack comes up on a laptop or on the alley's own hardware.",
-    tags: ['ESP32', 'MQTT', 'Socket.IO', 'Redis', 'React', 'Helm', 'Real-time', 'IoT'],
-    links: [{ type: 'link', label: 'Technical Docs', url: 'https://nicholas-a-hall.github.io/openlanelink' }],
+      "Commercial bowling systems are expensive, proprietary, and not especially friendly to someone who wants to integrate their own hardware or software. I wanted an open alternative that could talk to decades-old electromechanical equipment and make the whole place observable.\n\n" +
+      "The working system connects ESP32/ESP8266 devices over MQTT (Mosquitto) to a bridge that translates events into Socket.IO. An Express backend manages canonical lane state in Redis and broadcasts live updates to a management dashboard and four kiosk displays serving eight lanes. Reservations sync with Google Calendar in both directions. The stack runs through Docker Compose or Helm, whether it's on my laptop or the alley's hardware.\n\n" +
+      "The next architectural step is pushing more responsibility out to the lanes themselves: per-lane compute and state machines, replaceable ESP32 controllers, ESP-NOW with RS-485 fallback, and failure domains small enough that one bad lane doesn't take down the rest. The goal is simple: operators should be able to recover from weird equipment states quickly, without needing the person who wrote the software. It's the same reliability thinking I use in cloud platforms, just attached to bowling machines.",
+    tags: [
+      'ESP32', 'MQTT', 'Socket.IO', 'Redis',
+      'React', 'Helm', 'Real-time', 'IoT'
+    ],
+    links: [
+      {
+        type: 'link',
+        label: 'Technical Docs',
+        url: 'https://nicholas-a-hall.github.io/openlanelink'
+      }
+    ],
     featured: true,
-  },  
+  },
+  
   {
     title: 'Lunar Lanes',
     org: 'Owner & Lead Engineer',
@@ -166,11 +183,16 @@ export const projects = [
     links: [],
   },
   {
-    title: 'SOC 2 Certification',
-    org: 'Growth Protocol, Graylog',
+    title: 'SOC 2 Engineering & Audit Readiness',
+    org: 'Growth Protocol · Graylog',
     blurb:
-      'Led the engineering side of SOC 2 at an early-stage startup: Type 1 in under three months at GP. Type 2 at Graylog. The first-time Type 1 audit was slated to take three days at Growth Protocol; auditors finished in an afternoon. Implemented technical controls across the full surface (access, change management, active security monitoring) in Vanta, with hands-on remediation across cloud infra. One example: standing up cloud intrusion-detection alerting end-to-end for continuous-monitoring, wired into the pipeline rather than checked off on paper. SOC 2 is the gate that blocks enterprise sales, and at a small company it usually eats months. Hitting both fast and clean on a first audit is the differentiator.',
-    tags: ['SOC 2', 'Vanta', 'Security', 'Compliance', 'Cloud IDS'],
+      "I've taken two engineering organizations through SOC 2 work: Type I at Growth Protocol and Type II at Graylog. Different companies, different environments, same basic problem: turning security and compliance requirements into controls that actually work in production.\n\n" +
+      "At Growth Protocol, I owned the technical implementation for SOC 2 Type I, getting the company audit-ready in under three months. The auditors had reserved three days for the first audit and finished in an afternoon. I implemented controls across access management, change management, security monitoring, and cloud infrastructure, using Vanta to organize evidence and track remediation. That included building cloud intrusion-detection alerting into the operational workflow instead of treating monitoring as an audit checkbox.\n\n" +
+      "At Graylog, I helped take the cloud platform through SOC 2 Type II as part of building and launching Graylog Cloud. Compliance matters because enterprise customers need to trust the platform before they'll put their data on it. My approach is to build those requirements into the infrastructure and delivery process from the start, rather than scramble to bolt them on when an auditor shows up.",
+    tags: [
+      'SOC 2', 'Type I', 'Type II', 'Vanta',
+      'Security', 'Compliance', 'Cloud IDS'
+    ],
     links: [],
   },
   {
