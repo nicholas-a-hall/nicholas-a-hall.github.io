@@ -7,13 +7,11 @@ export default function Projects({ projects }) {
     <Section
       id="work"
       kicker="04 / Project Work"
-      title="Things I've built"
-      intro="Platforms, tools, and systems I've owned end-to-end. Developer platforms, observability, production AI, and yes, a bowling alley. Happy to go deep on any of them."
+      title="Selected engineering work"
+      intro="The problems, the engineering decisions, and what changed. Cloud platforms, production AI, observability, and yes, bowling machines."
     >
       <div className="projects__grid">
-        {projects.map((p) => (
-          <ProjectCard key={p.title} project={p} />
-        ))}
+        {projects.map((project) => <ProjectCard key={project.title} project={project} />)}
       </div>
     </Section>
   )

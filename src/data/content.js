@@ -99,118 +99,243 @@ export const skillGroups = [
 // Featured projects. The first ones are highlighted larger. `tags` show as
 // chips. `links` render as buttons; use type 'demo' | 'code' | 'link'.
 export const projects = [
+
   {
+
     title: 'Self-Service Kubernetes Platform',
-    org: 'Internal developer platform · multiple orgs, since 2022',
+
+    org: 'FORT Robotics · Formant · Growth Protocol',
+
+    summary: "A developer platform pattern I've built and refined at three companies. Different products and teams, same goal: make software delivery self-service without compromising reliability.",
+    metrics: [
+      { value: '3', label: 'Organizations' },
+      { value: 'Self-service', label: 'Application delivery' },
+      { value: 'Multi-cloud', label: 'Portable platform pattern' },
+    ],
+    challenge: "Developers shouldn't need a platform engineer and three Jira tickets to ship an application. Teams need dependable environments without rebuilding the same infrastructure for every workload.",
+    approach: [
+      'Built and refined the Kubernetes platform pattern at FORT Robotics, Formant, and Growth Protocol.',
+      'Used Terraform for the platform layer and shared operators: Istio, OpenTelemetry, ECK, Prometheus, Grafana, External Secrets, cert-manager, and Nginx ingress.',
+      'Kept application delivery in Helm through CI/CD. Infrastructure and application releases have separate lifecycles, and developers can change application values without modifying the platform.',
+      'Made mTLS, secrets, tracing, metrics, and alerting available as consistent platform capabilities. Application monitors and alerts live with the app as CRDs.',
+    ],
+    impact: [
+      'Gave development teams a repeatable path to deploy and manage applications without putting every release through the platform team.',
+      'Reused the architecture across three different organizations and their infrastructure constraints.',
+      'Kept common operational defaults close to applications instead of rebuilding them service by service.',
+    ],
     blurb:
+
       "Developers shouldn't need a platform engineer and three Jira tickets just to ship an application. I've built this same general Kubernetes pattern across multiple organizations: a portable, self-service platform where developers can deploy their own workloads and get the infrastructure they need without reinventing it every time.\n\n" +
       "Terraform manages the platform layer: Istio, OpenTelemetry, Elasticsearch via ECK, Prometheus, Grafana, External Secrets, cert-manager, and Nginx ingress, with ArgoCD and Vault available where needed. Application delivery is deliberately separate. CI/CD invokes Helm directly rather than pushing application releases through Terraform. Different lifecycles, clean rollbacks, and developers can change their own values without touching the underlying platform.\n\n" +
       "The result is a paved road. Developers ship an application and inherit mTLS, secrets, configuration, feature flags, tracing, metrics, and alerting by default. Monitors and alerts live as CRDs alongside the application in its Helm chart. The same patterns work across AWS, GCP, Azure, and customer-owned infrastructure. Platform engineering should remove obstacles, not become one.",
-    tags: [
-      'Kubernetes', 'Terraform', 'Operators', 'Helm',
-      'Istio', 'OpenTelemetry', 'ArgoCD', 'Multi-cloud'
-    ],
+    tags: ['Kubernetes', 'Terraform', 'Operators', 'Helm', 'Istio', 'OpenTelemetry', 'ArgoCD', 'Multi-cloud'],
+
     links: [],
+
     featured: true,
+
   },
+
   {
+
     title: 'OpenLaneLink',
+
     org: 'Lunar Lanes · open hardware + software stack',
+
+    summary: 'An open hardware and software stack connecting legacy bowling machines to modern telemetry, dashboards, and lane management.',
+    metrics: [
+      { value: '8', label: 'Bowling lanes served' },
+      { value: '4', label: 'Kiosk displays' },
+      { value: 'Real-time', label: 'Lane telemetry' },
+    ],
+    challenge: 'Commercial bowling systems are expensive and proprietary. I wanted to integrate my own hardware and software with decades-old electromechanical equipment, and make the machines observable.',
+    approach: [
+      'Connected ESP32/ESP8266 devices through Mosquitto MQTT to a bridge that translated events into Socket.IO.',
+      'Built an Express backend using Redis as canonical lane state, broadcasting updates to a management dashboard and four kiosk displays for eight lanes.',
+      'Added two-way Google Calendar reservation sync and packaged the stack to run via Docker Compose or Helm.',
+    ],
+    impact: [
+      'Operated a working real-time lane-management and equipment-telemetry system at an eight-lane bowling center.',
+      'Brought reservations, physical equipment events, and operator views together in a single system.',
+    ],
+    nextSteps: 'The next design moves state and failure recovery toward individual lanes: local state machines, replaceable controllers, ESP-NOW with RS-485 fallback. This is planned architecture, not a claim that it was deployed.', 
     blurb:
+
       "Commercial bowling systems are expensive, proprietary, and not especially friendly to someone who wants to integrate their own hardware or software. I wanted an open alternative that could talk to decades-old electromechanical equipment and make the whole place observable.\n\n" +
-      "The working system connects ESP32/ESP8266 devices over MQTT (Mosquitto) to a bridge that translates events into Socket.IO. An Express backend manages canonical lane state in Redis and broadcasts live updates to a management dashboard and four kiosk displays serving eight lanes. Reservations sync with Google Calendar in both directions. The stack runs through Docker Compose or Helm, whether it's on my laptop or the alley's hardware.\n\n" +
+      "The working system connected ESP32/ESP8266 devices over MQTT (Mosquitto) to a bridge that translated events into Socket.IO. An Express backend managed canonical lane state in Redis and broadcast live updates to a management dashboard and four kiosk displays serving eight lanes. Reservations synced with Google Calendar in both directions. The stack ran through Docker Compose or Helm, whether on my laptop or the alley's hardware.\n\n" +
       "The next architectural step is pushing more responsibility out to the lanes themselves: per-lane compute and state machines, replaceable ESP32 controllers, ESP-NOW with RS-485 fallback, and failure domains small enough that one bad lane doesn't take down the rest. The goal is simple: operators should be able to recover from weird equipment states quickly, without needing the person who wrote the software. It's the same reliability thinking I use in cloud platforms, just attached to bowling machines.",
-    tags: [
-      'ESP32', 'MQTT', 'Socket.IO', 'Redis',
-      'React', 'Helm', 'Real-time', 'IoT'
-    ],
-    links: [
-      {
-        type: 'link',
-        label: 'Technical Docs',
-        url: 'https://nicholas-a-hall.github.io/openlanelink'
-      }
-    ],
+    tags: ['ESP32', 'MQTT', 'Socket.IO', 'Redis', 'React', 'Helm', 'Real-time', 'IoT'],
+
+    links: [{ type: 'link', label: 'Technical Docs', url: 'https\://nicholas-a-hall.github.io/openlanelink' }],
+
     featured: true,
-  },
-  
+
+  },  
+
   {
+
     title: 'Lunar Lanes',
+
     org: 'Owner & Lead Engineer',
+
     blurb:
+
       'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
+
     tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
+
     links: []
+
   },
+
   {
+
     title: 'MLOps Platform Engineering',
+
     org: 'Growth Protocol',
+
     blurb:
+
       'Production infrastructure for AI/ML-enabled services, the operational side of AI: making AI-backed systems deployable, observable, debuggable, and maintainable in real production. Cloud runtime support, deployment automation, and telemetry/logging/alerting wired into incident response, applying SRE and platform practices to practical MLOps on Vertex AI.',
+
     tags: ['MLOps', 'Vertex AI', 'GCP', 'Observability', 'SRE'],
+
     links: [],
+
   },
+
   {
+
     title: 'CanaryBot: LLM Incident-Response Agent',
+
     org: 'Growth Protocol & Formant',
+
     blurb:
+
       'An LLM-assisted incident-response bot connecting alerting workflows to a conversational interface in Slack. It relays operational alerts and answers the questions that eat time during active response (what happened, when it started, what changed, what signals fired), keeping incident context in one place so the team can focus on diagnosis, mitigation, and recovery instead of digging through scattered logs and chat.',
+
     tags: ['LLM', 'Python', 'Prompt Engineering', 'Slack', 'Incident Response', 'SRE'],
+
     links: [],
+
   },
+
   {
+
     title: 'Theia: Production AI Voice Receptionist',
+
     org: 'Lunar Lanes',
+
     blurb:
+
       'A production AI voice agent answering live customer calls for Lunar Lanes on Zoom Phone AI. It identifies itself as an AI on pickup, handles common questions in a consistent persona, and hands transactional requests (booking, lane availability) off to dedicated skills. I engineered the knowledge base from scratch (hours, two pricing modes with per-game vs hourly break-even math, the ownership/restoration story, payments, accessibility, conduct), and designed a stable persona so it carries calls that were never explicitly scripted, while keeping back-of-house policy out of public answers.',
+
     tags: ['Conversational AI', 'Prompt Engineering', 'Zoom Phone AI', 'VoIP', 'LLM'],
+
     links: [],
+
   },
+
   {
+
     title: 'Integrated Observability Platform',
+
     org: 'Multiple production environments',
+
     blurb:
+
       "Built and operated observability platforms across cloud-native services, Kubernetes, and AI/ML workloads. OpenTelemetry served as the translation and transport layer between workloads, collectors, backends, and alerting. I pushed teams toward native first-party instrumentation, and used the OTel Operator's auto-injection where it wasn't yet in place for faster visibility. Prometheus, Grafana, Alertmanager, Elasticsearch, and Jaeger, wired into Slack-based alerting and incident response.",
+
     tags: ['OpenTelemetry', 'Prometheus', 'Grafana', 'Jaeger', 'Elasticsearch', 'Kubernetes'],
+
     links: [],
+
   },
+
   {
+
     title: 'Incident Command Systems',
+
     org: 'Multiple engineering orgs',
+
     blurb:
+
       'Stood up incident command systems that moved response out of ad-hoc heroics and into a repeatable operating model teams trust under pressure. Defined roles, severity models, escalation paths, and Slack-based response channels; integrated alerting, observability, and timeline capture; and established postmortem practice and clean handoffs between engineering, platform, customer-facing, and leadership.',
+
     tags: ['Incident Response', 'On-call', 'Postmortems', 'Alerting', 'SRE'],
+
     links: [],
+
   },
+
   {
+
     title: 'SOC 2 Engineering & Audit Readiness',
+
     org: 'Growth Protocol · Graylog',
+
+    summary: 'Turning security requirements into working operational controls instead of an audit-time scramble.',
+    metrics: [
+      { value: 'Type I', label: 'Growth Protocol' },
+      { value: 'Type II', label: 'Graylog' },
+      { value: '< 3 months', label: 'Growth Protocol audit readiness' },
+    ],
+    challenge: 'Enterprise customers need evidence that the infrastructure is secure and properly operated. At smaller teams, preparing for SOC 2 can pull engineers away from product delivery for months.',
+    approach: [
+      'At Growth Protocol, owned the technical implementation for SOC 2 Type I: access control, change management, security monitoring, cloud remediation, and evidence tracking through Vanta.',
+      'Integrated cloud intrusion-detection alerting into real operations instead of treating it as a paperwork requirement.',
+      'At Graylog, helped take the cloud platform through SOC 2 Type II as part of building and launching Graylog Cloud.',
+    ],
+    impact: [
+      'Growth Protocol was ready for its Type I audit in under three months; an audit scheduled for three days finished in an afternoon.',
+      'Supported Graylog Cloud through SOC 2 Type II with controls built into platform operations and delivery.',
+    ],
     blurb:
+
       "I've taken two engineering organizations through SOC 2 work: Type I at Growth Protocol and Type II at Graylog. Different companies, different environments, same basic problem: turning security and compliance requirements into controls that actually work in production.\n\n" +
       "At Growth Protocol, I owned the technical implementation for SOC 2 Type I, getting the company audit-ready in under three months. The auditors had reserved three days for the first audit and finished in an afternoon. I implemented controls across access management, change management, security monitoring, and cloud infrastructure, using Vanta to organize evidence and track remediation. That included building cloud intrusion-detection alerting into the operational workflow instead of treating monitoring as an audit checkbox.\n\n" +
       "At Graylog, I helped take the cloud platform through SOC 2 Type II as part of building and launching Graylog Cloud. Compliance matters because enterprise customers need to trust the platform before they'll put their data on it. My approach is to build those requirements into the infrastructure and delivery process from the start, rather than scramble to bolt them on when an auditor shows up.",
-    tags: [
-      'SOC 2', 'Type I', 'Type II', 'Vanta',
-      'Security', 'Compliance', 'Cloud IDS'
-    ],
+    tags: ['SOC 2', 'Vanta', 'Security', 'Compliance', 'Cloud IDS'],
+
     links: [],
+
+    featured: true,
+
   },
+
   {
+
     title: 'Quarry',
+
     org: 'Personal project · offline-first web app',
+
     blurb:
+
       'A job-search tracker that treats the hunt like a sales pipeline: applications are leads, sources and categories are segments, statuses are stages, and a live dashboard shows where effort actually converts. Every KPI and chart (conversion by source, pipeline funnel, response rate, salary ranges, in-demand skills) is derived live from the records, with applications going cold flagged automatically. No backend and no accounts: data lives entirely in the browser via localStorage, with JSON import/export and a one-tap PNG summary card. It ships as a single self-contained HTML file that runs fully offline.',
+
     tags: ['React', 'Recharts', 'Data viz', 'localStorage', 'Offline-first'],
-    links: [{ type: 'demo', label: 'Live demo', url: 'https://nicholas-a-hall.github.io/quarry/' }],
+
+    links: [{ type: 'demo', label: 'Live demo', url: 'https\://nicholas-a-hall.github.io/quarry/' }],
+
   },
+
   {
+
     title: 'Assay',
+
     org: 'Personal project · job-market landscape tool',
+
     blurb:
+
       "The companion to Quarry. Where Quarry tracks your own pipeline, Assay analyzes the wider job market. A FastAPI and MongoDB backend serves a React/Recharts dashboard that breaks the market down by vertical (software engineering, data/ML, product), with endpoints for market pulse, job-board activity, in-demand skills, and salary bands. The mining theme is deliberate: a quarry extracts the ore, an assay tells you what it's worth.",
+
     tags: ['FastAPI', 'Python', 'MongoDB', 'React', 'Recharts', 'Docker'],
+
     links: [],
+
   },
+
 ]
 
 // Talks and other video appearances.
