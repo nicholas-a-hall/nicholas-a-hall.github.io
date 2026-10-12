@@ -9,7 +9,7 @@ export const profile = {
   name: 'Nick',
   fullName: 'Nicholas Hall',
   // Name + level eyebrow above the hero headline. Recruiters need both fast.
-  title: 'Nicholas Hall · Staff Platform & Site Reliability Engineer & Team Lead',
+  title: 'Nicholas Hall · Senior / Staff Platform & Site Reliability Engineer & Team Lead',
   // The spine: one line that says what you do and works for streaming-scale
   // reliability AND startup range.
   tagline: 'I simplify complexity and solve hard problems, fast.',
@@ -20,7 +20,7 @@ export const profile = {
   pitch:
     "I like strange problems, useful systems, and the places where tech makes life easier. If you, I'm your guy.",
   location: 'Litchfield, Illinois',
-  availability: 'Open to Staff Plaform Engineering & lead roles',
+  availability: 'Open to Senior / Staff Plaform Engineering & Lead roles',
   email: 'nick@section33.io',
   phone: '(217) 608-0555',
   phoneUrl: 'tel:+12176080555',
@@ -364,16 +364,6 @@ export const experience = [
       'Owned SOC 2 Type 1 with Vanta, passing the final audit in 4 hours, rather than the initial 3-day allotment.',
       'Ran multi-cloud Kubernetes (GKE / AKS / EKS), consolidating 30+ Cloud Run microservices onto one deployable platform.',
       'Partnered with the Data and ML teams to rework their data storage strategy, speeding up model training and improving training data accuracy.',
-    ],
-  },
-  {
-    role: 'Owner & Mechanic',
-    company: 'Lunar Lanes LLC',
-    period: 'Dec 2025 – Sep 2026',
-    highlights: [
-      'Took a bowling alley from unimproved land to operational in 90 days, owning architecture, reliability, cost, and P&L.',
-      'Built an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32, ESPNow, RS485, MQTT).',
-      'Shipped a React/TypeScript ops dashboard with live telemetry, plus Theia, an AI phone agent for reservations.',
     ],
   },
   {
