@@ -9,7 +9,7 @@ export const profile = {
   name: 'Nick',
   fullName: 'Nicholas Hall',
   // Name + level eyebrow above the hero headline. Recruiters need both fast.
-  title: 'Nicholas Hall · Staff/Principal Platform & Site Reliability Engineer',
+  title: 'Nicholas Hall · Staff Platform & Site Reliability Engineer & Team Lead',
   // The spine: one line that says what you do and works for streaming-scale
   // reliability AND startup range.
   tagline: 'I simplify complexity and solve hard problems, fast.',
@@ -18,9 +18,9 @@ export const profile = {
     'I build tools and infrastructure that make development faster, reduce operational headaches, and save companies money. 21 years solving production engineering problems across AWS, GCP, Azure, Kubernetes, on-prem, and hybrid environments. From internal developer platforms to reliability and automation; I design, build, and operate systems that make distributed systems work reliably, efficiently and on a budget.',
   // Closing line for the contact section (straight from your LinkedIn).
   pitch:
-    "I like strange problems, useful systems, and the places where tech makes life easier. If you have a headache technology could help with, I'm your guy.",
+    "I like strange problems, useful systems, and the places where tech makes life easier. If you, I'm your guy.",
   location: 'Litchfield, Illinois',
-  availability: 'Open to Staff/Principal IC & startup lead roles',
+  availability: 'Open to Staff Plaform Engineering & lead roles',
   email: 'nick@section33.io',
   phone: '(217) 608-0555',
   phoneUrl: 'tel:+12176080555',
@@ -58,7 +58,7 @@ export const about = {
     'Army veteran',
     'Father of 4',
     '21 years in tech',
-    'Owns a bowling alley (my real-world homelab)',
+    'Owned a bowling alley (my real-world homelab)',
     'Python daily driver',
     'Hardware-to-cloud',
   ],
@@ -220,7 +220,7 @@ export const projects = [
   },
   {
 
-    title: 'MLOps Platform Engineering',
+    title: 'MLOps & Cloud Platform Engineering',
 
     org: 'Growth Protocol',
 
@@ -274,11 +274,11 @@ export const projects = [
 
     title: 'Lunar Lanes',
 
-    org: 'Owner & Lead Engineer',
+    org: 'Owner & Mechanic',
 
     blurb:
 
-      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I run the technical side; friends and family run the day-to-day.',
+      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I ran the technical side; sadly the business closed due to lack of traffic in the summer.',
 
     tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
 
@@ -367,8 +367,8 @@ export const experience = [
     ],
   },
   {
-    role: 'Owner & Lead Engineer',
-    company: 'Lunar Lanes',
+    role: 'Owner & Mechanic',
+    company: 'Lunar Lanes LLC',
     period: 'Dec 2025 – Sep 2026',
     highlights: [
       'Took a bowling alley from unimproved land to operational in 90 days, owning architecture, reliability, cost, and P&L.',
