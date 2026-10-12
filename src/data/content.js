@@ -367,7 +367,7 @@ export const experience = [
     ],
   },
   {
-    role: 'DevOps Technical Lead (Impacted by ~30% Company-wide RIF)',
+    role: 'DevOps Technical Lead (Impacted by RIF)',
     company: 'Formant',
     period: 'Mar 2024 – Apr 2025',
     highlights: [
