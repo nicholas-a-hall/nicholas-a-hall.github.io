@@ -391,7 +391,7 @@ export const experience = [
   {
     role: 'Site Reliability Engineer (Contract)',
     company: 'Paramount+ / Paramount Global',
-    period: 'Jan 2022 – Aug 2022',
+    period: '2022',
     highlights: [
       'Processed 20 billion log entries per week for global streaming platform using Elasticsearch on Kubernetes (ECK).',
       'Cut $4M/year in GCP spend without degrading observability with fluentbit sidecars and pre-ingestion logging libraries.',
@@ -409,7 +409,7 @@ export const experience = [
   {
     role: 'IT Manager',
     company: 'KSDK-TV / TEGNA',
-    period: 'May 2016 – Apr 2019',
+    period: '2016 – 2019',
     highlights: [
       'Led an IT team building Python/PowerShell automation that reduced rework 97% and saved 160 hours a year.',
       'Cut unplanned downtime in key systems 95% (30 hours in 2017 to 90 minutes in 2018) and MTTR 96% (4 hours to 10 minutes) with proactive monitoring and a rebuilt incident-response process.',
