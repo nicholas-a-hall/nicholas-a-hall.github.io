@@ -211,7 +211,7 @@ export const projects = [
 
     blurb:
 
-      'An LLM-assisted incident-response bot connecting alerting workflows to a conversational interface in Slack. It relays operational alerts and answers the questions that eat time during active response (what happened, when it started, what changed, what signals fired), keeping incident context in one place so the team can focus on diagnosis, mitigation, and recovery instead of digging through scattered logs and chat.',
+      'An LLM-assisted incident-response bot providing a conversational interface for alerting and incident management in Slack. It relayed operational alerts and answered questions during active response (what happened, when it started, what changed, what signals fired), keeping incident context in one place so the team can focus on diagnosis, mitigation, and recovery.',
 
     tags: ['LLM', 'Python', 'Prompt Engineering', 'Slack', 'Incident Response', 'SRE'],
 
@@ -398,7 +398,7 @@ export const experience = [
     ],
   },
   {
-    role: 'Cloud Team Lead',
+    role: 'Senior Site Reliability Engineer / Cloud Team Lead',
     company: 'Graylog',
     period: 'Jan 2020 – Dec 2021',
     highlights: [
