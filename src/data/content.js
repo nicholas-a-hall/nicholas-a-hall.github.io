@@ -19,8 +19,8 @@ export const profile = {
   // Closing line for the contact section (straight from your LinkedIn).
   pitch:
     "I like strange problems, useful systems, and the places where tech makes life easier. If you, I'm your guy.",
-  location: 'Litchfield, Illinois',
-  availability: 'Open to Senior / Staff Plaform Engineering & Lead roles',
+  location: 'Litchfield, Illinois | Remote, US',
+  availability: 'Open to Senior / Staff Platform Engineering & Lead roles',
   email: 'nick@section33.io',
   phone: '(217) 608-0555',
   phoneUrl: 'tel:+12176080555',
@@ -371,7 +371,7 @@ export const experience = [
     company: 'Formant',
     period: 'Mar 2024 – Apr 2025',
     highlights: [
-      'Cut CI/CD build times from 60 minutes to 6 by refactoring monolithic CI/CD pipleines, moving application deployments to helm, and creating immutable release artifacts',
+      'Cut CI/CD build times from 60 minutes to 6 by refactoring monolithic CI/CD pipelines, moving application deployments to helm, and creating immutable release artifacts',
       'Assembled and led the DevOps team that cleared years of standing technical debt and improved reliability of fragile build pipelines to 95%',
       'Optimized, helped structure, and preserved roughly 750TB of unstructured robotics telemetry in S3 for model training.',
       'Enabled repeatable releases and rollbacks by migrating platform services off EC2 / Docker Compose onto Kubernetes-based unified developer platform.',
