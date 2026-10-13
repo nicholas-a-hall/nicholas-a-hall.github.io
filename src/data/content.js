@@ -278,7 +278,7 @@ export const projects = [
 
     blurb:
 
-      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I ran the technical side; sadly the business closed due to lack of traffic in the summer.',
+      'My small town had few attractions for families in the winter, so my family and I bought a beat-up bowling alley, and it became my real-world homelab for end-to-end technical impact. From unimproved land to operational in 90 days: an event-driven IoT + observability stack for legacy electromechanical equipment (ESP32 edge nodes, ESPNow, RS485 fallback, per-lane compute, MQTT), a React/TypeScript ops dashboard with live machine telemetry, and full ownership of architecture, reliability, cost, and P&L. I ran the technical side; the business closed in the summer.',
 
     tags: ['IoT', 'ESP32', 'MQTT', 'React', 'TypeScript', 'Observability'],
 
@@ -293,7 +293,7 @@ export const projects = [
 
     blurb:
 
-      'A production AI voice agent answering live customer calls for Lunar Lanes on Zoom Phone AI. It identifies itself as an AI on pickup, handles common questions in a consistent persona, and hands transactional requests (booking, lane availability) off to dedicated skills. I engineered the knowledge base from scratch (hours, two pricing modes with per-game vs hourly break-even math, the ownership/restoration story, payments, accessibility, conduct), and designed a stable persona so it carries calls that were never explicitly scripted, while keeping back-of-house policy out of public answers.',
+      'A production AI voice agent for answering live customer calls for Lunar Lanes on Zoom Phone AI. It identifies itself as an AI on pickup, handles common questions in a consistent persona, and hands transactional requests (booking, lane availability) off to dedicated skills. I engineered the knowledge base from scratch (hours, two pricing modes with per-game vs hourly break-even math, the ownership/restoration story, payments, accessibility, conduct), and designed a stable persona so it carries calls that were never explicitly scripted, while keeping back-of-house policy out of public answers.',
 
     tags: ['Conversational AI', 'Prompt Engineering', 'Zoom Phone AI', 'VoIP', 'LLM'],
 
