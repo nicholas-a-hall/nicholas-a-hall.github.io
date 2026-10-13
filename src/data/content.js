@@ -18,7 +18,7 @@ export const profile = {
     'I build tools and infrastructure that make development faster, reduce operational headaches, and save companies money. 21 years solving production engineering problems across AWS, GCP, Azure, Kubernetes, on-prem, and hybrid environments. From internal developer platforms to reliability and automation; I design, build, and operate systems that make distributed systems work reliably, efficiently and on a budget.',
   // Closing line for the contact section (straight from your LinkedIn).
   pitch:
-    "I like strange problems, useful systems, and the places where tech makes life easier. If you, I'm your guy.",
+    "I like strange problems and useful systems. I'm looking for a team that has them. Senior / Staff Platform, SRE, or Devops Lead. [Remote, US]",
   location: 'Litchfield, Illinois | Remote, US',
   availability: 'Open to Senior / Staff Platform Engineering & Lead roles',
   email: 'nick@section33.io',
